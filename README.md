@@ -43,4 +43,14 @@ o	25 epochs gave the highest accuracy in stepwise training iterations from 10 ep
 hidden_nodes_layer1=80	relu  
 hidden_nodes_layer2=50	relu  
 hidden_nodes_layer3=30	relu  
-o	This mix of layers, neurons, and activation methods seemed to work better than others:  
+o	This mix of layers, neurons, and activation methods seemed to work better than others:
+
+![image](https://user-images.githubusercontent.com/101474477/180889081-7cf64c7a-4d7c-483b-8d16-ac38c66202bd.png)
+
+
+## Summary  
+The results of this exercise were not adequate for the needs of the client.  The model does not offer enough information to evaluate results in its current context: there is no measurement of sensitivity, specificity, or precision.  It is difficult to infer what the low accuracy is a result of, or how to avoid making distributions to risky organizations.  The model does not provide clarity through the data to guide the foundation’s policy and operations.    
+
+There are some steps which could be taken to help correct the process. Adding more features to develop a wider net for influential variables is an important step, as would running descriptive summary statistics on the existing dataset to get a clear vision of the data and how variables may interact with one another. Based on more data and more features engineering, it could be possible to optimize the model to achieve target accuracy.  
+
+However, I recommend going to another model altogether namely, the Random Forest model. This model provides clean comprehensive output in the form of confusion matrixes and classification reports.  It also generates a list of features by importance, making it easier to quickly see the weight of individual variables. It is accurate, resistant to overfitting, and highly interpretable.  It is widely used and therefor familiar to most.
