@@ -5,49 +5,53 @@ AlphabetSoup is philanthropic foundation that raises money to support other orga
 
 AlphabetSoup furnished a database of over 2,050 organizations with 34,300 observations and 9 features.  The original features are as follows:   
 
-EIN and NAME—Identification columns  
-  APPLICATION_TYPE—Alphabet Soup application type  
-  AFFILIATION—Affiliated sector of industry  
-  CLASSIFICATION—Government organization classification  
-  USE_CASE—Use case for funding  
-  ORGANIZATION—Organization type  
-  STATUS—Active status 
-  INCOME_AMT—Income classification  
-  SPECIAL_CONSIDERATIONS—Special consideration for application  
-  ASK_AMT—Funding amount requested  
-  IS_SUCCESSFUL—Was the money used effectively  
+    EIN and NAME—Identification columns  
+    APPLICATION_TYPE—Alphabet Soup application type  
+    AFFILIATION—Affiliated sector of industry  
+    CLASSIFICATION—Government organization classification  
+    USE_CASE—Use case for funding  
+    ORGANIZATION—Organization type  
+    STATUS—Active status 
+    INCOME_AMT—Income classification  
+    SPECIAL_CONSIDERATIONS—Special consideration for application  
+    ASK_AMT—Funding amount requested  
+    IS_SUCCESSFUL—Was the money used effectively  
 
 ## Results   
 #### Pre-processing  
 •	The target variable is IS_SUCCESSFUL  
 •	Feature variables are:  
-  APPLICATION_TYPE—Alphabet Soup application type  
-  AFFILIATION—Affiliated sector of industry  
-  CLASSIFICATION—Government organization classification  
-  USE_CASE—Use case for funding  
-  ORGANIZATION—Organization type  
-  INCOME_AMT—Income classification  
-  ASK_AMT—Funding amount requested  
+
+    APPLICATION_TYPE—Alphabet Soup application type  
+    AFFILIATION—Affiliated sector of industry  
+    CLASSIFICATION—Government organization classification  
+    USE_CASE—Use case for funding  
+    ORGANIZATION—Organization type  
+    INCOME_AMT—Income classification  
+    ASK_AMT—Funding amount requested  
 
 •	Variable(s) that were neither targets nor features and were removed from the input data were:  
-  EIN and NAME—Identification columns  
-  STATUS—Active status  
-  SPECIAL_CONSIDERATIONS—Special consideration for application  
+
+    EIN and NAME—Identification columns  
+    STATUS—Active status  
+    SPECIAL_CONSIDERATIONS—Special consideration for application  
 
 Status and Special_Considerations were removed during the optimization process to further the accuracy of the model.  
 
 #### Compiling, Training, and Evaluating the Model  
 •	Neurons, layers, and activation mechanisms   
 After several days of concentrated effort and many essays of multiple combinations of feature engineering, increase and/or reduction in training epochs, and substitution in the number of layers, neurons, and activation types, I found the following:  
-o	25 epochs gave the highest accuracy in stepwise training iterations from 10 epochs to 150  
-o	This mix of layers, neurons, and activation methods seemed to work better than others:  
-  hidden_nodes_layer1=80	relu  
-  hidden_nodes_layer2=50	relu  
-  hidden_nodes_layer3=30	relu  
 
-o	Dropping Status and Special_Considerations assisted to increase accuracy to the greatest degree I could achieve.  
-o	I was not able to optimize to the 75% goal; however, I was able to increase accuracy from the baseline 72.6% to 72.8%, a gain of .2% or.002.  
-o	The following is a partial representation of the steps I took to try and increase model performance and the results therefrom:  
+    o	25 epochs gave the highest accuracy in stepwise training iterations from 10 epochs to 150  
+    o	This mix of layers, neurons, and activation methods seemed to work better than others:  
+
+                hidden_nodes_layer1=80	relu  
+                hidden_nodes_layer2=50	relu  
+                hidden_nodes_layer3=30	relu  
+
+    o	Dropping Status and Special_Considerations assisted to increase accuracy to the greatest degree I could achieve.  
+    o	I was not able to optimize to the 75% goal; however, I was able to increase accuracy from the baseline 72.6% to 72.8%, a gain of .2% or.002.  
+    o	The following is a partial representation of the steps I took to try and increase model performance and the results therefrom:  
 
 
 ![image](https://user-images.githubusercontent.com/101474477/180889081-7cf64c7a-4d7c-483b-8d16-ac38c66202bd.png)
