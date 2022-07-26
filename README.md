@@ -1,7 +1,7 @@
 # Neural_Network_Charity_Analysis  
 
 ## Overview   
-AlphabetSoup is philanthropic foundation that raises money to support other organizations involved in research and actions to protect the environment, increase human welfare, and to promote global unity.  Through an application process, AlphabetSoup identifies organizations to subsidize and distributes its funds directly to them.  The purpose of this project is to ensure that the selection process accurately identifies organizations that will fulfill their commitments to AlphabetSoup.  The successful process and model will reduce or eliminate donations to high-risk organizations.    
+AlphabetSoup is philanthropic foundation that raises money to support other organizations involved activities to protect the environment, increase human welfare, and to promote global unity.  Through an application process, AlphabetSoup identifies organizations to subsidize and distributes funds directly to them.  The purpose of this project is to ensure that the selection process accurately identifies organizations that will fulfill their commitments to AlphabetSoup.  The successful process and model will reduce or eliminate donations to high-risk organizations.    
 
 AlphabetSoup furnished a database of over 2,050 organizations with 34,300 observations and 9 features.  The original features are as follows:   
 
