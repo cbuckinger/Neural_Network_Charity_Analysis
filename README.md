@@ -52,6 +52,7 @@ After several days of concentrated effort and many essays of multiple combinatio
     o	Dropping Status and Special_Considerations assisted to increase accuracy to the greatest degree I could achieve.  
     o	I was not able to optimize to the 75% goal; however, I was able to increase accuracy from the baseline 72.6% to 72.8%, a gain of .2% or.002.  
     o	The following is a partial representation of the steps I took to try and increase model performance and the results therefrom:  
+    
 
 
 ![image](https://user-images.githubusercontent.com/101474477/180889081-7cf64c7a-4d7c-483b-8d16-ac38c66202bd.png)
